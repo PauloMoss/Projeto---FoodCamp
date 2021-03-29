@@ -1,3 +1,83 @@
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+.topo {
+    height: 92px;
+    width: 100%;
+    background-color: #CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+h2 {
+    color: #fff;
+    font-size: 20px;
+}
+.titulo_lista {
+    margin-top: 27px;
+    background-color: greenyellow;
+}
+div:nth-of-type(2) {
+    margin-top: 123px;
+}
+ul {
+    display: flex;
+    overflow: scroll;
+
+    height: 216px;
+    background-color: #E5E5E5;
+    margin-top: 17px;
+    padding: 0 11px;
+}
+ul:last-of-type {
+    margin-bottom: 108px;
+}
+li {
+    height: 100%;
+    width: 172px;
+    margin: 0 8px;
+    
+    background-color: grey;
+}
+li img {
+    width: 144px;
+    object-fit: cover;
+    margin: 18px 14px 8px 14px;
+}
+.nome_prato {
+    font-weight: 700;
+}
+.conclusao_pedido {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+    height: 92px;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+
+    width: 364px;
+    height: 61px;
+    padding: 8px 70px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    
+}
+
 
