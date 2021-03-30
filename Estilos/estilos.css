@@ -11,17 +11,22 @@ body {
     left: 0;
 }
 h1 {
-    color: #fff;
-    font-size: 50px;
     font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color: #fff;
+    margin: 12px 0 0px 21px;
 }
 h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-left: 21px;
 }
 .titulo_lista {
-    margin-top: 27px;
-    background-color: greenyellow;
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    margin: 27px 0 0 19px;
 }
 div:nth-of-type(2) {
     margin-top: 123px;
@@ -42,16 +47,36 @@ li {
     height: 100%;
     width: 172px;
     margin: 0 8px;
+    padding: 18px 14px 13px 14px;
     
-    background-color: grey;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
 }
 li img {
     width: 144px;
     object-fit: cover;
-    margin: 18px 14px 8px 14px;
 }
 .nome_prato {
     font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333;
+    margin-top: 5px;
+}
+.descricao_conteudo {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+.preço {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-top: 3px;
 }
 .conclusao_pedido {
     position: fixed;
@@ -68,7 +93,6 @@ button {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 23px;
     text-align: center;
     color: #fff;
 
@@ -77,7 +101,6 @@ button {
     padding: 8px 70px;
     background: #CBCBCB;
     border-radius: 50px;
-    
 }
 
 
