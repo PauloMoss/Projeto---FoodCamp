@@ -1,14 +1,9 @@
+/* Seção de configurações */
+
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 96px;
     background-color: #E5E5E5;
-}
-.topo {
-    height: 92px;
-    width: 100%;
-    background-color: #CF2B2B;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 h1 {
     font-family: 'Righteous', cursive;
@@ -23,22 +18,43 @@ h2 {
     font-weight: 400;
     margin-left: 21px;
 }
+ion-icon {
+    color: lawngreen;
+    font-size: 20px;
+    width: 50px;
+}
+
+/* Seção de Topo */
+
+.topo {
+    height: 92px;
+    width: 100%;
+    background-color: #CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Seção de Cardápio */
+
 .titulo_lista {
     font-family: 'Righteous', cursive;
     font-size: 26px;
     margin: 27px 0 0 19px;
 }
-div:nth-of-type(2) {
-    margin-top: 123px;
-}
 ul {
     display: flex;
     overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
 
     height: 216px;
     background-color: #E5E5E5;
     margin-top: 17px;
     padding: 0 11px;
+}
+ul::-webkit-scrollbar {  
+    display: none;  /* Safari and Chrome */
 }
 ul:last-of-type {
     margin-bottom: 108px;
@@ -55,6 +71,7 @@ li {
 }
 li img {
     width: 144px;
+    height: 87px;
     object-fit: cover;
 }
 .nome_prato {
@@ -78,10 +95,16 @@ li img {
     color: #000;
     margin-top: 3px;
 }
+
+/* Seção de fechamento de pedido */ 
+
 .conclusao_pedido {
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     height: 92px;
     width: 100%;
@@ -89,18 +112,79 @@ li img {
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 button {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
     text-align: center;
     color: #fff;
-
     width: 364px;
     height: 61px;
-    padding: 8px 70px;
-    background: #CBCBCB;
+    padding: 8px 16%;
     border-radius: 50px;
+    font-size: 20px;
+}
+.pedido_aberto {
+    font-weight: 400;
+    background: #CBCBCB;
+    
+}
+.pedido_fechado {
+    font-weight: 700;
+    background: #32B72F;
+    display: none;
 }
 
+/* Seção de Confirmação de pedido */
 
+.confirme_pedido {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+
+    width: 300px;
+    min-height: 300px;
+    background-color: #50D074;
+    color: #fff;
+    border-radius: 9px;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    display: none;
+    
+}
+.confirme_pedido p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+.total {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.confirme_pedido button {
+    width: 85%;
+    border-radius: 50px;
+    padding: 3px 5%;
+}
+.tudo_certo {
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #50D074;
+}
+.cancelar {
+    height: 15%;
+    font-size: 16px;
+    background: inherit;
+    color: #fff;
+
+
+/**background: rgba(255, 255, 255, 0.9);**/ 
