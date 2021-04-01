@@ -20,9 +20,9 @@
         
     </div>
     <div class="titulo_lista">Primeiro, seu prato</div>
-    <ul>
-        <li>
-            <!-- <ion-icon name="checkmark-circle-sharp"></ion-icon>-->
+    <ul class="Prato_Principal">
+        <li class="frango_yin_yang" onclick="selecionar_pratoPrincipal('.frango_yin_yang')">
+
             <img src="Img\frango_yin_yang 1.png" alt="frango_yin_yang">
             <p class="nome_prato">Frango yin yang</p>
             <div class="descricao_conteudo">
@@ -31,93 +31,104 @@
             <p class="preço">R$ 14,90</p>
             
         </li>
-        <li>
+        <li class="comida_japonesa" onclick="selecionar_pratoPrincipal('.comida_japonesa')">
             <img src="Img\comida-japonesa.jpg" alt="comida-japonesa">
             <p class="nome_prato">Comida Japonesa</p>
             <div class="descricao_conteudo">
                 Combinado variado com 60 peças
             </div>
             <p class="preço">R$ 124,00</p>
+            
         </li>
-        <li>
+        <li class="Pizza_Tomatoes" onclick="selecionar_pratoPrincipal('.Pizza_Tomatoes')">
             <img src="Img\Pizza_Tomatoes.jpg" alt="Pizza_Tomatoes">
             <p class="nome_prato">Pizza Marguerita</p>
             <div class="descricao_conteudo">
                 Pizza gourmet sabor marguerita 
             </div>
             <p class="preço">R$ 75,00</p>
+            
         </li>
-        <li>
+        <li class="salada_tropical" onclick="selecionar_pratoPrincipal('.salada_tropical')">
             <img src="Img\salada-tropical.jpg" alt="salada-tropical">
             <p class="nome_prato">Salada Tropical</p>
             <div class="descricao_conteudo">
                 Salada verde 
             </div>
             <p class="preço">R$ 12,00</p>
+           
         </li>
     </ul>
+
     <div class="titulo_lista">Agora, sua bebida</div>
-    <ul>
-        <li>
-            <img src="Img\coquinha_gelada 1.png" alt="Coca cola">
+    <ul class="Bebidas">
+        <li class="Coca_cola" onclick="selecionar_Bebida('.Coca_cola')">
+            <img src="Img\coquinha_gelada 1.png" alt="Coca-cola">
             <p class="nome_prato">Coquinha gelada</p>
             <div class="descricao_conteudo">
                 Lata 350ml
             </div>
             <p class="preço">R$ 4,90</p>
+           
         </li>
-        <li>
+        <li class="sucos" onclick="selecionar_Bebida('.sucos')">
             <img src="Img\sucos.jpg" alt="sucos">
             <p class="nome_prato">Suco Natural</p>
             <div class="descricao_conteudo">
                 Diversos sabores 500ml
             </div>
             <p class="preço">R$ 15,90</p>
+            
         </li>
-        <li>
+        <li class="corona" onclick="selecionar_Bebida('.corona')">
             <img src="Img\corona.jpg" alt="corona">
             <p class="nome_prato">Cerveja Corona</p>
             <div class="descricao_conteudo">
                 Corona com limão, garrafa gelada 350ml
             </div>
             <p class="preço">R$ 14,60</p>
+            
         </li>
-        <li>
+        <li class="agua" onclick="selecionar_Bebida('.agua')">
             <img src="Img\garrafaAgua-500ml.png" alt="garrafaAgua-500ml">
             <p class="nome_prato">Água</p>
             <div class="descricao_conteudo">
                 Garrafa d'água 500ml
             </div>
             <p class="preço">R$ 3,80</p>
+            
         </li>
     </ul>
+
     <div class="titulo_lista">Por fim, sua sobremesa</div>
-    <ul>
-        <li>
+    <ul class="Sobremesas">
+        <li class="pudim" onclick="selecionar_Sobremesa('.pudim')">
             <img src="Img\pudim 1.png" alt="pudim">
             <p class="nome_prato">Pudim</p>
             <div class="descricao_conteudo">
                 Pudim tradicional
             </div>
             <p class="preço">R$ 11,50</p>
+            
         </li>
-        <li>
+        <li class="top_sundae" onclick="selecionar_Sobremesa('.top_sundae')">
             <img src="Img\top-sundae.png" alt="top-sundae">
             <p class="nome_prato">Sundae</p>
             <div class="descricao_conteudo">
                 Top Sundae 3 sabores
             </div>
             <p class="preço">R$ 19,00</p>
+            
         </li>
-        <li>
-            <img src="Img\bolo-no-pote.jpg" alt="pudim">
+        <li class="bolo_pote" onclick="selecionar_Sobremesa('.bolo_pote')">
+            <img src="Img\bolo-no-pote.jpg" alt="bolo-pote">
             <p class="nome_prato">Bolo de pote</p>
             <div class="descricao_conteudo">
                 Bolo de chocolate 250g
             </div>
             <p class="preço">R$ 16,90</p>
         </li>
-        <li>
+        <li class="Frutas" onclick="selecionar_Sobremesa('.Frutas')">
             <img src="Img\Frutas.jpg" alt="Frutas">
             <p class="nome_prato">Salada de Frutas</p>
             <div class="descricao_conteudo">
@@ -128,12 +139,11 @@
     </ul>
 
     <div class="conclusao_pedido">
-        <button class="pedido_aberto">Selecione os 3 itens
+        <button class="pedido_aberto" onclick="conclusao_Pedido()">Selecione os 3 itens
             para fechar o pedido</button>
-        <button class="pedido_fechado">Fechar pedido</button>
     </div>
 
-    <div class="confirme_pedido">
+    <div class="confirme_pedido  oculto">
         <p>Confirme seu pedido</p>
         <div class="pedido"><span>Frango Yin Yang</span><span>14,90</span></div>
         <div class="pedido"><span>Coquinha gelada</span><span>14,90</span></div>
@@ -145,5 +155,6 @@
     </div>
     
     <script src="Script\script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

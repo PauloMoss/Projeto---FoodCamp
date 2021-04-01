@@ -1,4 +1,3 @@
-/* Seção de configurações */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -19,12 +18,13 @@ h2 {
     margin-left: 21px;
 }
 ion-icon {
-    color: lawngreen;
-    font-size: 20px;
-    width: 50px;
+    color: #32B72F;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    bottom: 10px;
 }
-
-/* Seção de Topo */
 
 .topo {
     height: 92px;
@@ -33,9 +33,8 @@ ion-icon {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
-
-/* Seção de Cardápio */
 
 .titulo_lista {
     font-family: 'Righteous', cursive;
@@ -60,6 +59,7 @@ ul:last-of-type {
     margin-bottom: 108px;
 }
 li {
+    position: relative;
     height: 100%;
     width: 172px;
     margin: 0 8px;
@@ -68,6 +68,11 @@ li {
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+}
+.selecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: 5px solid #32B72F;
 }
 li img {
     width: 144px;
@@ -96,8 +101,6 @@ li img {
     margin-top: 3px;
 }
 
-/* Seção de fechamento de pedido */ 
-
 .conclusao_pedido {
     position: fixed;
     bottom: 0;
@@ -112,7 +115,6 @@ li img {
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 button {
     text-align: center;
     color: #fff;
@@ -133,8 +135,6 @@ button {
     display: none;
 }
 
-/* Seção de Confirmação de pedido */
-
 .confirme_pedido {
     position: fixed;
     display: flex;
@@ -151,8 +151,9 @@ button {
     border-radius: 9px;
     text-align: center;
     padding: 20px 10px 10px 10px;
+}
+.oculto {
     display: none;
-    
 }
 .confirme_pedido p {
     font-weight: bold;
