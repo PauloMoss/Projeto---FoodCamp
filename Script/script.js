@@ -43,7 +43,6 @@ function selecionar_Bebida(bebida, tipo) {
         selecionado.classList.remove("selecionado");
         icone.classList.add("oculto");
     }
-
     checkBebida = document.querySelector(bebida);
     checkBebida.classList.add("selecionado");
     const iconeCheck = document.querySelector(bebida + " ion-icon");
@@ -64,7 +63,6 @@ function selecionar_Sobremesa(sobremesa, tipo) {
         selecionado.classList.remove("selecionado");
         icone.classList.add("oculto");
     }
-
     checkSobremesa = document.querySelector(sobremesa);
     checkSobremesa.classList.add("selecionado");
     const iconeCheck = document.querySelector(sobremesa + " ion-icon");
