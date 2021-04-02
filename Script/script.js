@@ -101,7 +101,7 @@ function confirmação_de_Pedido() {
     if (fechado.classList.contains("pedido_fechado") === true) {
         const confirmaçao = document.querySelector(".confirme_pedido");
         confirmaçao.classList.remove("oculto");
-        const embassado = document.querySelector('.fundoEmbassado');
+        const embassado = document.querySelector('.fundoEmbacado');
         embassado.classList.remove("oculto");
         const estatico = document.querySelector('body');
         estatico.classList.add("estatico");
@@ -130,7 +130,7 @@ function confirmação_de_Pedido() {
 function cancelar_Pedido() {
     const confirmaçao = document.querySelector(".confirme_pedido");
     confirmaçao.classList.add("oculto");
-    const embassado = document.querySelector('.fundoEmbassado');
+    const embassado = document.querySelector('.fundoEmbacado');
     embassado.classList.add("oculto");
     const estatico = document.querySelector('body');
     estatico.classList.remove("estatico");
