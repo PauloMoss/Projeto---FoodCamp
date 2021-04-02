@@ -95,10 +95,10 @@ function conclusao_Pedido() {
 
 function confirmação_de_Pedido() {
     const fechado = document.querySelector(".conclusao_pedido button")
-    nome = prompt("Por favor, informe o seu nome :");
-    endereço = prompt("Para finalizar, nos informe o seu endereço :")
-    
+
     if (fechado.classList.contains("pedido_fechado") === true) {
+        nome = prompt("Por favor, informe o seu nome :");
+        endereço = prompt("Para finalizar, nos informe o seu endereço :")
         const confirmaçao = document.querySelector(".confirme_pedido");
         confirmaçao.classList.remove("oculto");
         const embassado = document.querySelector('.fundoEmbacado');
@@ -146,5 +146,5 @@ function convera_Wpp() {
     const msg = encodeURIComponent(Wpp_ola + Wpp_pedido + valor_total + dados_cliente);
 
     const MudarLink = document.querySelector(".confirme_pedido a");
-    MudarLink.href = MudarLink.href.replace('#', "https://wa.me/?text=" + msg);
+    MudarLink.href = MudarLink.href.replace('https://wa.me/?text=',"https://wa.me/5521993778424?text=" +  msg);
 }
