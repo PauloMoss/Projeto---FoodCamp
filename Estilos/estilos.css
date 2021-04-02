@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     padding-top: 96px;
@@ -20,12 +19,10 @@ h2 {
 ion-icon {
     color: #32B72F;
     position: absolute;
-    width: 20px;
-    height: 20px;
+    font-size: 20px;
     right: 10px;
     bottom: 10px;
 }
-
 .topo {
     height: 92px;
     width: 100%;
@@ -33,9 +30,8 @@ ion-icon {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 5;
 }
-
 .titulo_lista {
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -45,8 +41,6 @@ ul {
     display: flex;
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-
     height: 216px;
     background-color: #E5E5E5;
     margin-top: 17px;
@@ -64,7 +58,6 @@ li {
     width: 172px;
     margin: 0 8px;
     padding: 18px 14px 13px 14px;
-    
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
@@ -99,9 +92,7 @@ li img {
     font-weight: 400;
     font-size: 16px;
     color: #000;
-    
 }
-
 .conclusao_pedido {
     position: fixed;
     bottom: 0;
@@ -109,7 +100,6 @@ li img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     height: 92px;
     width: 100%;
     padding: 15px 25px;
@@ -128,22 +118,20 @@ button {
 .pedido_aberto {
     font-weight: 400;
     background: #CBCBCB;
-    
 }
 .pedido_fechado {
     font-weight: 700;
     background: #32B72F;
 }
-
 .confirme_pedido {
     position: fixed;
+    z-index: 15;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     top: calc(50% - 150px);
     left: calc(50% - 150px);
-
     width: 300px;
     min-height: 300px;
     background-color: #50D074;
@@ -171,9 +159,9 @@ button {
     margin-bottom: 20px;
 }
 .confirme_pedido button {
-    width: 85%;
+    width: 100%;
     border-radius: 50px;
-    padding: 3px 5%;
+    padding: 4px;
 }
 .tudo_certo {
     height: 40px;
@@ -186,6 +174,21 @@ button {
     font-size: 16px;
     background: inherit;
     color: #fff;
-
-
-/**background: rgba(255, 255, 255, 0.9);**/ 
+}
+.fundoEmbassado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.fundoEmbassado img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+.estatico {
+    overflow: hidden;
+}
