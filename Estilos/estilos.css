@@ -90,15 +90,16 @@ li img {
     display: flex;
     align-items: center;
     height: 45px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     color: #A6A6A6;
+    margin-bottom: 5px;
 }
-.preço {
+.valor {
     font-weight: 400;
     font-size: 16px;
     color: #000;
-    margin-top: 3px;
+    
 }
 
 .conclusao_pedido {
@@ -132,7 +133,6 @@ button {
 .pedido_fechado {
     font-weight: 700;
     background: #32B72F;
-    display: none;
 }
 
 .confirme_pedido {
