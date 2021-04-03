@@ -97,26 +97,25 @@ function confirmação_de_Pedido() {
     if (fechado.classList.contains("pedido_fechado") === true) {
         nome = prompt("Por favor, informe o seu nome :");
         endereço = prompt("Para finalizar, nos informe o seu endereço :")
-        const confirmaçao = document.querySelector(".confirme_pedido");
-        confirmaçao.classList.remove("oculto");
+       
         const embassado = document.querySelector('.fundoEmbacado');
         embassado.classList.remove("oculto");
         const estatico = document.querySelector('body');
         estatico.classList.add("estatico");
         
-        const Pedido1 = document.querySelector('.pedido1 span');
+        const Pedido1 = document.querySelector('.confirme_prato span');
         Pedido1.innerHTML = tipoPrato;
-        const preçoPedido1 = document.querySelector('.pedido1 span:nth-of-type(2)');
+        const preçoPedido1 = document.querySelector('.confirme_prato span:nth-of-type(2)');
         preçoPedido1.innerHTML = 'R$ ' + preçoPrato;
 
-        const Pedido2 = document.querySelector('.pedido2 span');
+        const Pedido2 = document.querySelector('.confirme_bebida span');
         Pedido2.innerHTML = tipoBebida;
-        const preçoPedido2 = document.querySelector('.pedido2 span:nth-of-type(2)');
+        const preçoPedido2 = document.querySelector('.confirme_bebida span:nth-of-type(2)');
         preçoPedido2.innerHTML = 'R$ ' + preçoBebida;
 
-        const Pedido3 = document.querySelector('.pedido3 span');
+        const Pedido3 = document.querySelector('.confirme_sobremesa span');
         Pedido3.innerHTML = tipoSobremesa;
-        const preçoPedido3 = document.querySelector('.pedido3 span:nth-of-type(2)');
+        const preçoPedido3 = document.querySelector('.confirme_sobremesa span:nth-of-type(2)');
         preçoPedido3.innerHTML = 'R$ ' + preçoSobremesa;
 
         const preçoTotal = document.querySelector('.total span:nth-of-type(2)');
@@ -126,15 +125,13 @@ function confirmação_de_Pedido() {
 } 
 
 function cancelar_Pedido() {
-    const confirmaçao = document.querySelector(".confirme_pedido");
-    confirmaçao.classList.add("oculto");
     const embassado = document.querySelector('.fundoEmbacado');
     embassado.classList.add("oculto");
     const estatico = document.querySelector('body');
     estatico.classList.remove("estatico");
 }
 
-function convera_Wpp() {
+function conversa_Wpp() {
     const Wpp_ola = "Olá, gostaria de fazer o pedido:\n"
     const Wpp_pedido = " - Prato: " + tipoPrato + "\n - Bebida: " + tipoBebida + "\n - Sobremesa: " + tipoSobremesa;
     const valor_total = "\nTotal: R$ " + valor.toFixed(2);
