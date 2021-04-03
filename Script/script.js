@@ -139,8 +139,6 @@ function convera_Wpp() {
     const Wpp_pedido = " - Prato: " + tipoPrato + "\n - Bebida: " + tipoBebida + "\n - Sobremesa: " + tipoSobremesa;
     const valor_total = "\nTotal: R$ " + valor.toFixed(2);
     const dados_cliente = "\n \nNome: " + nome + "\nEndereço: " + endereço;
-    alert(Wpp_ola + Wpp_pedido + valor_total + dados_cliente)
-
     const msg = encodeURIComponent(Wpp_ola + Wpp_pedido + valor_total + dados_cliente);
 
     const MudarLink = document.querySelector(".confirme_pedido a");
