@@ -16,13 +16,6 @@ h2 {
     font-weight: 400;
     margin-left: 21px;
 }
-ion-icon {
-    color: #32B72F;
-    position: absolute;
-    font-size: 20px;
-    right: 10px;
-    bottom: 10px;
-}
 .topo {
     height: 92px;
     width: 100%;
@@ -44,7 +37,7 @@ ul {
     height: 216px;
     background-color: #E5E5E5;
     margin-top: 17px;
-    padding: 0 11px;
+    padding: 0px 11px 3px 11px;
 }
 ul::-webkit-scrollbar {  
     display: none;  /* Safari and Chrome */
@@ -57,20 +50,28 @@ li {
     height: 100%;
     width: 172px;
     margin: 0 8px;
-    padding: 18px 14px 13px 14px;
+    padding: 18px 10px 5px 10px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 8px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
 }
 .selecionado {
-    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.3);
     border-radius: 9px;
     border: 5px solid #32B72F;
+}
+ion-icon {
+    color: #32B72F;
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    bottom: 10px;
 }
 li img {
     width: 144px;
     height: 87px;
     object-fit: cover;
+    border-radius: 9px;
 }
 .nome_prato {
     font-weight: 700;
@@ -113,7 +114,7 @@ button {
     height: 61px;
     padding: 8px 16%;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 19px;
 }
 .pedido_aberto {
     font-weight: 400;
@@ -122,6 +123,19 @@ button {
 .pedido_fechado {
     font-weight: 700;
     background: #32B72F;
+}
+.fundoEmbacado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.fundoEmbacado img {
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
 }
 .confirme_pedido {
     position: fixed;
@@ -139,9 +153,7 @@ button {
     border-radius: 9px;
     text-align: center;
     padding: 20px 10px 10px 10px;
-}
-.oculto {
-    display: none;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 }
 .confirme_pedido p {
     font-weight: bold;
@@ -175,19 +187,8 @@ button {
     background: inherit;
     color: #fff;
 }
-.fundoEmbacado {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-}
-.fundoEmbacado img {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: blur(5px);
+.oculto {
+    display: none;
 }
 .estatico {
     overflow: hidden;
